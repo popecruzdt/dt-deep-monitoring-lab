@@ -39,7 +39,7 @@ trace.set_tracer_provider(tracer_provider)
 
 tracer_provider.add_span_processor(
     BatchSpanProcessor(OTLPSpanExporter(
-        endpoint="https://hfn13693.live.dynatrace.com/api/v2/otlp/v1/traces",
+        endpoint="https://<tenant>/api/v2/otlp/v1/traces",
         headers={
           "Authorization": "Api-Token dt0c01.<TOKEN>" #TODO Replace <TOKEN> with your API Token as mentioned in the next step
         },
