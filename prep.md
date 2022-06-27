@@ -18,6 +18,7 @@ apt install docker.io
 download docker-compose 1.29.2
 ```
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 ```
 download example-voting-app from github
 ```
