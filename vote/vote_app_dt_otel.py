@@ -54,6 +54,7 @@ app = Flask(__name__)
 # opentelemetry
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
+RedisInstrumentor().instrument()
 # end opentelemetry
 
 gunicorn_error_logger = logging.getLogger('gunicorn.error')
