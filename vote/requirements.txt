@@ -2,6 +2,7 @@ Flask
 Redis
 gunicorn
 requests
+protobuf==3.20.1
 opentelemetry-api
 opentelemetry-sdk
 opentelemetry-exporter-jaeger
